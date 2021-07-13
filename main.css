@@ -89,6 +89,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
+    text-align: center;
     background-color: #96c0d9;
     overflow-x: hidden;
     padding-top: 56px;
