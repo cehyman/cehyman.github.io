@@ -47,7 +47,7 @@ body {
     position: absolute;
     top: 45%;
     transform: translate(-50%, -55%);
-    text-align: right;
+    text-align: center;
 }
 
 .description h1 {
