@@ -1,114 +1,13 @@
-body {
-    padding: 0;
-    margin: 0;
-    background: #e9f2f6;
+.wrapper {
+    display: flex;
+    align-items: stretch;
 }
 
-.navbar {
-    background: #96c0d9;
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
 }
 
-.nav-link,
-.navbar-brand {
-    color: #fff;
-    cursor: pointer;
-}
-
-.nav-link {
-    margin-right: 1em !important;
-}
-
-.nav-link:hover {
-    color: #000;
-}
-
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-.header {
-    background-image: url('assets/images/header-background.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
-}
-
-.overlay {
-    position: absolute;
-    min-height: 100%;
-    min-width: 100%;
-    left: 0;
-    top: 0;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.description {
-    left: 50%;
-    position: absolute;
-    top: 45%;
-    transform: translate(-50%, -55%);
-    text-align: center;
-}
-
-.description h1 {
-    color: #96c0d9;
-}
-
-.description p {
-    color: #fff;
-    font-size: 1.3rem;
-    line-height: 1.5;
-}
-
-.features {
-    margin: 4em auto;
-    padding: 1em;
-    position: relative;
-}
-
-.feature-title {
-    color: #333;
-    font-size: 1.3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.features img {
-    -webkit-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
-    margin-bottom: 16px;
-}
-
-
-.sidenav {
-    height: 100%;
-    width: 240px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    text-align: center;
-    background-color: #96c0d9;
-    overflow-x: hidden;
-    padding-top: 120px;
-}
-
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 32px;
-    color: #f1f1f1;
-    display: block;
-}
-
-.sidenav a:hover {
-    color: #fff;
-}
-
-.main {
-    margin-left: 160px; /* Same as the width of the sidenav */
-    font-size: 28px; /* Increased text to enable scrolling */
-    padding: 0px 10px;
+#sidebar.active {
+    margin-left: -250px;
 }
