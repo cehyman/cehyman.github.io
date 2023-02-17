@@ -1,8 +1,7 @@
-
 import React, { useState } from 'react'
 import { useSprings, animated, to } from 'react-spring'
 import { useDrag } from 'react-use-gesture'
-import './App.css'
+import './Deck.css'
 
 const cards = [
   ' ',
@@ -10,7 +9,8 @@ const cards = [
   ' ',
   ' ',
   ' ',
-  
+  ' ',
+  ' '
 ]
 
 // These two are just helpers, they curate spring data, values that are later being interpolated into css
@@ -39,9 +39,11 @@ function Deck() {
   })
   // Now we're just mapping the animated values to our view, that's it. Btw, this component only renders once. :-)
   return props.map(({ x, y, rot, scale }, i) => (
+    
     <animated.div key={i} style={{ transform: to([x, y], (x, y) => `translate3d(${x}px,${y}px,0)`) }}>
       {/* This is the card itself, we're binding our gesture to it (and inject its index so we know which is which) */}
-      <animated.div {...bind(i)} style={{ transform: to([rot, scale], trans), backgroundImage: `url(${cards[i]})` }} />
+      <animated.div {...bind(i)} style={{ transform: to([rot, scale], trans) }} />
+      
     </animated.div>
   ))
 }
