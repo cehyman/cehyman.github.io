@@ -3,7 +3,7 @@ import React from 'react'
 import './Intro.css'
 
 function Intro() {  
-    return <h1>Hello</h1>; 
+    return <h1>Coming Soon...</h1>; 
 }
 
 export default Intro;
