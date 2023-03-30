@@ -149,7 +149,7 @@
   padding-top: 80px;
 }
 .intro{
-  padding-left: 5vw;
+  padding-left: 4vw;
 }
 
 .wave {
@@ -219,9 +219,9 @@
 }
 .imagedeveloper {
   margin-top: 50px;
-  max-width: 550px;
-  height: 400px;
-  /* background-image: url(../Assets/homedev.gif); */
+  width: 950px;
+  height: 750px;
+  background-image: url(../Assets/homedev.png);
   background-size: cover;
   background-position: center;
 }
@@ -286,12 +286,12 @@
     #88B2DC 46%,
     #91EAE4 100%
   );
-  padding-top: 110px;
+  padding-top: 150px;
 }
 .textbackground {
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem;
   background-color: transparent;
   border-radius: 15px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
@@ -332,7 +332,9 @@
 }
 .webimage {
   max-width: 500px;
-  height: 350px;
+  height: 500px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: url(../Assets/web-removebg-preview.png);
   background-size: cover;
   background-position: center;
@@ -364,13 +366,19 @@
 .project-section {
   position: relative !important;
   padding-top: 80px !important;
+  overflow: hidden;
 }
 .project-card {
-  padding-top: 20px;
-  padding-bottom: 50px !important;
+  overflow-y: scroll;
+  margin-left: 70%;
+  padding-top: 40px !important;
+  padding-bottom: 35px !important;
   padding-left: 25px !important;
   padding-right: 25px !important;
-  height: auto !important;
+}
+
+.projects-header{
+  padding-bottom: 1rem;
 }
 
 .project-card-view {
@@ -381,7 +389,7 @@
   border: transparent;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
-  height: 100% !important;
+  margin-bottom: 25px;
   border-radius: 15px;
 }
 .project-card-view:hover {
@@ -403,6 +411,36 @@
   font-size: 18px;
   letter-spacing: 1px;
 }
+
+.experience-card {
+  margin-left: 12%;
+  margin-top: 100px;
+  height: 45%;
+  width: 50%;
+  padding-top: 20px !important;
+  padding-bottom: 25px !important;
+  padding-left: 25px !important;
+  padding-right: 25px !important;
+}
+
+.experience-card-view {
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
+  color: #191919 !important;
+  background-color: transparent !important;
+  border: transparent;
+  opacity: 0.9 !important;
+  transition: all 0.5s ease 0s !important;
+  border-radius: 15px;
+}
+.experience-card-view:hover {
+  transform: scale(1.02) !important;
+  overflow: hidden !important;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px !important;
+}
+
+
 
 .btn-primary {
   color: #fff !important;
@@ -439,8 +477,9 @@
   );
   padding-top: 110px;
 }
+
 .contacthead {
-  padding-top: 3rem;
+  padding-top: 12rem;
   text-align: center;
   font-size: 3.2rem;
   font-weight: 800;
@@ -469,6 +508,7 @@
   margin-top: 11rem;
 }
 .copyright {
+
   padding: 1px;
   text-align: center;
   font-size: 12px;

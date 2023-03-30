@@ -11,7 +11,7 @@ function Home() {
     <div className='homepagebackground'>
       <Container>
         <Row className='introrow'>
-          <Col className='intro' md={7}>
+          <Col className='intro' md={5}>
             <h2 className='headtext'>Hello <span className='wave'><img className='hand' src={hand} alt=""></img> </span></h2>
             <h2 className='nametext'>I'm Chris Hyman</h2>
             <span></span>
@@ -25,7 +25,7 @@ function Home() {
             }}
               className='socailmediabtn'><AiFillGithub className='icon' /></button>
           </Col>
-          <Col md={5}>
+          <Col md={7}>
             <div className="imagedeveloper">
             </div>
           </Col>

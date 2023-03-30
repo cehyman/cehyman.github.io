@@ -1,20 +1,28 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import { Row } from "react-bootstrap";
 
 
 
-function ProjectCard(props) {
+function ExperienceCard(props) {
   return (
-    <Card className="project-card-view">
+    <Card className="experience-card-view">
+      <Card.Header as="h1">{props.header}</Card.Header>
       <Card.Img variant="top" src={props.imgPath} alt="card-img" />
       <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text style={{ textAlign: "justify" }}>
+        <Card.Title as="h3">
+          {props.title}
+          <Card.Subtitle as="h5" style={{ textAlign: 'right', marginTop: '-25px'}}>
+            {props.date}
+          </Card.Subtitle>
+        </Card.Title>
+
+        <Card.Text style={{ textAlign: "justify", wordSpacing: "1px" }}>
           {props.description}
         </Card.Text>
         <Button className="viewbtn" variant="primary" href={props.ghLink} target="_blank">
-          View
+          View Hennessey
         </Button>
         {"\n"}
         {"\n"}
@@ -35,4 +43,4 @@ function ProjectCard(props) {
     </Card>
   );
 }
-export default ProjectCard;
+export default ExperienceCard;

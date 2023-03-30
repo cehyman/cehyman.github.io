@@ -11,15 +11,16 @@ function Aboutpage() {
                     <Col md={7} >
                         <h3 className='aboutmetext'>About Me</h3>
                         <p className='aboutdetails'>
-                            I am currently a student studying computer science, and I have a strong passion for developing high-quality software.
+                            I am a senior studying computer science, and I have a strong passion for developing high-quality software.
                             I am constantly looking for opportunities to expand my skillset and stay up-to-date with the latest developments in the field.
                             Through my personal website, I aim to share my journey, experiences, and interests with others.
                         </p>
                         <h3 className='educationtext'>Education</h3>
                         <p className='educationdetails'>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Feugiat sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi.
-                            Metus dictum at tempor commodo ullamcorper.
+                        I am currently pursuing a Bachelor of Science in Computer Science at Purdue University's School of Computer Science, located in West Lafayette, Indiana. 
+                        I started this program in August 2019 and will be graduating in December 2023. 
+                        As part of my degree, I am focusing on Software Engineering, which provides me with in-depth education and training in this exciting field. 
+                        I am excited to be a part of this program and to continue expanding my knowledge and skills in computer science.
                         </p>
                         <ul className='cwlist'>
                             <Row className='courseworkrow'>
